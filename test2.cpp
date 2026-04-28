@@ -9,7 +9,7 @@ int main() {
     while (tt--) {
         int X, Y;
         cin >> X >> Y;
-        q2.program(X, Y);
+        cout << q2.program(X, Y) << '\n';
     }
 
     return 0;

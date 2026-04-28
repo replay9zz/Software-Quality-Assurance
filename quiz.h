@@ -17,12 +17,12 @@ public:
 
 class Quiz2 {
 public:
-    void program(int X, int Y) {
+    std::string program(int X, int Y) {
         if (2 < X && X < 30 && 1 < Y && Y < 50) {
-            std::cout << X * Y << '\n';
+            return std::to_string(X * Y);
         }
         else {
-            std::cout << "Invalid" << '\n';
+            return "Invalid";
         }
     }
 };
@@ -41,12 +41,12 @@ public:
 
 class Quiz4 {
 public:
-    void program(float ACT, float GPA) {
-        if ((ACT <= 36 && GPA <= 4.0) && (10 * GPA + ACT >= 71)) {
-            std::cout << "OK" << '\n';
+    std::string program(int ACT, float GPA) {
+        if ((ACT <= 36 && GPA <= 4.0f) && (10 * GPA + ACT >= 71.0f)) {
+            return "OK";
         }
         else {
-            std::cout << "NG" << '\n';
+            return "NG";
         }
     }
 };

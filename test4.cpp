@@ -9,7 +9,7 @@ int main () {
     while (tt--) {
         float ACT, GPA;
         cin >> ACT >> GPA;
-        q4.program(ACT, GPA);
+        cout << q4.program(ACT, GPA) << '\n';
     }
 
     return 0;
